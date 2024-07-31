@@ -6,12 +6,12 @@ ANCHOR_WALLET=~/.config/solana/id.json ANCHOR_PROVIDER_URL=https://staging-rpc.d
 ```
 
 # SPL token faucet
-This project aims at implementing an SPL token faucet in its simplest form using Anchor. Faucets are a must-have when developing dApps to test out token flows. A faucet allows you to receive an arbitrary amount of tokens; always coming from the same Mint. This program is deployoned on the eclipse testnet as `9XXyjMZtennyC1fRSLvUpiq9UuAfFpCS1a8RSzcg8rMH` and the mint is `6tyZgRJkMcqqKAVt26xc25tv5HK7ZGFNrYB3aGgpyEQA`
+This project aims at implementing an SPL token faucet in its simplest form using Anchor. Faucets are a must-have when developing dApps to test out token flows. A faucet allows you to receive an arbitrary amount of tokens; always coming from the same Mint. This program is deployoed on the eclipse testnet as `9XXyjMZtennyC1fRSLvUpiq9UuAfFpCS1a8RSzcg8rMH` and the mint is `6tyZgRJkMcqqKAVt26xc25tv5HK7ZGFNrYB3aGgpyEQA`
 
 # Program
 ## Running the program on Localnet
 
-Swith to localnet.
+Switch to localnet.
 
 ```bash
 solana config set --url http://127.0.0.1:8899
@@ -39,9 +39,12 @@ anchor deploy
 ```
 
 ```shell
-ANCHOR_WALLET=~/.config/solana/id.json ANCHOR_PROVIDER_URL=https://staging-rpc.dev.eclipsenetwork.xyz  node setup/token_airdrop.js
+ANCHOR_WALLET=~/.config/solana/id.json 
+ANCHOR_PROVIDER_URL=https://staging-rpc.dev.eclipsenetwork.xyz
 ```
-
+```bash
+node setup/token_airdrop.js
+```
 ## Running program tests
 Before it's possible to run tests, all packages need to be installed and `mocha-ts` and `typescript` need to be globally installed.
 ```bash
